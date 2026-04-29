@@ -1,0 +1,494 @@
+.Login_Page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+hr.solid {
+  border-top: 2px solid #f4c837;
+  width: 150px;
+  margin: 0 auto;
+}
+
+/* TOPPER */
+.Topper {
+  background-color: var(--fcpc-dark-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+.Contact_Topper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--fcpc-white);
+  font-size: 0.875rem;
+}
+
+.Contact_Topper span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.Contact_Topper img,
+.References_Topper a img {
+  filter: invert(1);
+  height: 16px;
+  width: 16px;
+}
+
+.References_Topper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.References_Topper a img {
+  height: 20px;
+  width: 20px;
+}
+
+/* BUTTONS IN TOPPER AND NAV */
+.Enroll_Btn,
+.Login_Btn {
+  background-color: var(--fcpc-yellow);
+  color: var(--fcpc-blue);
+  border: 1.5px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Enroll_Btn {
+  padding: 6px 18px;
+  border-radius: 25px;
+}
+
+.Enroll_Btn:hover {
+  background-color: var(--fcpc-dark-blue);
+  color: var(--fcpc-yellow);
+  border-color: var(--fcpc-yellow);
+}
+
+.Login_Btn:hover {
+  background-color: #ffda5f;
+}
+
+/* NAV */
+.Login_Nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffffc9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow-x: auto;
+}
+
+.Logo_btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Logo_btn img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.Logo_btn h1 {
+  color: var(--fcpc-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* LOGIN PANEL */
+.Login_Panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 420px;
+  max-width: 90vw;
+  z-index: 1300;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Login_Panel_Header img {
+  width: 200px;
+}
+
+.Login_Panel_Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Login_Panel_Header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.Login_Close_Btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.Login_Close_Btn:hover {
+  color: #000;
+}
+
+.Google_Btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #2348ff;
+  border-radius: 50px;
+  background-color: #318ef924;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.Google_Btn img {
+  height: 20px;
+  width: 20px;
+}
+
+.Office365_Btn:hover {
+  background-color: #f5f5f5;
+}
+
+.Login_Divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 0;
+}
+
+.Admin_Login_Btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 50px;
+  background-color: #0a7ea4;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.Admin_Login_Btn:hover {
+  background-color: #085f7a;
+}
+
+/* NAV BUTTONS */
+.Nav_Bar_Action_Buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.Nav_Bar_Action_Buttons button {
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Help_Btn {
+  background-color: transparent;
+  color: var(--fcpc-dark-blue);
+  border: 1px solid var(--fcpc-dark-blue);
+}
+
+.Help_Btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* HAMBURGER */
+.Hamburger_Btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 1100;
+}
+
+.Hamburger_Btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--fcpc-dark-blue);
+  border-radius: 3px;
+}
+
+/* OVERLAY */
+.Menu_Overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1200;
+}
+
+/* SIDE DRAWER */
+.Side_Drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1200;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.Side_Drawer.open {
+  transform: translateX(0);
+}
+
+.Close_Btn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.Drawer_Links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.Drawer_Links li {
+  padding: 14px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.Drawer_Links li:hover {
+  background-color: #f5f5f5;
+}
+
+.Drawer_Active {
+  background-color: var(--fcpc-yellow) !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.Drawer_Action_Buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.Drawer_Action_Buttons button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ABOUT */
+.slideshow_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.About_Container {
+  margin-top: 20px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.About_Section_Title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.About_Intro {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.Flex_Panels {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Flex_Panels p {
+  margin-top: 10px;
+}
+
+.Panel_Title {
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.Block {
+  flex: 1 1 150px;
+  max-width: 280px;
+  padding: 20px;
+}
+
+/* LMS FEATURES */
+.Lms_Features {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.Lms_Video {
+  flex: 1;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
+}
+
+.Lms_Video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.Lms_Text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Lms_Text_Content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 500px;
+}
+
+.Lms_Text_Content h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.Lms_Text_Content hr.solid {
+  margin: 0;
+}
+
+.Lms_Text_Content p {
+  color: #444;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.View_More_Btn {
+  display: inline-block;
+  background-color: var(--fcpc-yellow);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.View_More_Btn:hover {
+  background-color: #e0b800;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .Topper {
+    display: block;
+  }
+
+  .Contact_Topper span {
+    margin-top: 10px;
+    font-size: 12px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .References_Topper {
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Hamburger_Btn {
+    display: flex;
+  }
+
+  .Nav_Bar_Action_Buttons {
+    display: none;
+  }
+
+  .Lms_Features {
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .Lms_Video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .Lms_Text_Content h2 {
+    font-size: 1.3rem;
+  }
+}

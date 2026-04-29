@@ -1,0 +1,42 @@
+/* TOPBAR */
+.HP_Topbar {
+    margin-top: 20px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.HP_Search_Container {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px 16px;
+    gap: 10px;
+    flex: 1;
+    max-width: 380px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.HP_Search_Icon {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.HP_Search {
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    color: #333;
+    background: transparent;
+    width: 100%;
+}
+
+.HP_Date {
+    font-size: 0.85rem;
+    color: var(--fcpc-dark);
+    font-weight: 300;
+    white-space: nowrap;
+}

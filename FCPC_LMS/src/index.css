@@ -1,0 +1,35 @@
+:root {
+  --fcpc-blue: #171789;
+  --fcpc-yellow: #f4c837;
+  --fcpc-white: #FFFFFF;
+  --fcpc-light-gray: #f4f4f4ab;
+  --fcpc-dark-blue: #000270;
+  --fcpc-dark: #888;
+  --fcpc-pale-blue: #3d5a99;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background-color: var(--fcpc-light-gray);
+  color: #333;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--fcpc-blue);
+}

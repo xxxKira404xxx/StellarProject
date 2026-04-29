@@ -1,0 +1,117 @@
+.Courses_Bar {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Courses_Container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Courses_TopBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Courses_TopBar h1 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--fcpc-dark);
+}
+
+.Courses_TopBar button {
+    font-size: 13px;
+    padding: 5px 14px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.Courses_TopBar button:hover {
+    background-color: #6f6ca38c;
+    color: var(--fcpc-dark-blue);
+}
+
+.Course_Panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+}
+
+.Course_Title {
+    background: #3d5a99;
+    border-radius: 12px;
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.Course_Title:hover {
+    opacity: 0.92;
+}
+
+.Course_Title h2 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Stacked avatars */
+.Course_Avatars {
+    display: flex;
+    align-items: center;
+}
+
+.Course_Avatars img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #3d5a99;
+    object-fit: cover;
+    margin-right: -8px;
+}
+
+.Avatar_Count {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    border: 2px solid #3d5a99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Meta rows */
+.Course_Meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.Course_Meta_Item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 13px;
+}
+
+.Course_Meta_Item svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
