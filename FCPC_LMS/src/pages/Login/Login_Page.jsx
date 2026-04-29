@@ -16,8 +16,8 @@ import youtubeIcon from "../../assets/Icons/youtube.png";
 import googleIcon from "../../assets/Icons/google.png";
 
 // Import Logos
-import fcpcLogo from "../../assets/Logo's/FCPC_Logo.png";
-import fcpcSmallLogo from "../../assets/Logo's/FCPC.png";
+import fcpcLogo from "../../assets/Logos/FCPC_Logo.png";
+import fcpcSmallLogo from "../../assets/Logos/FCPC.png";
 
 const slideImages = [slide1, slide2, slide3];
 

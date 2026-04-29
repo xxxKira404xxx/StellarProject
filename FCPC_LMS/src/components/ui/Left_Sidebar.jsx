@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Left_Sidebar.css";
+import fcpcSmallLogo from "../../assets/Logos/FCPC.png";
 
 const Left_Sidebar = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const Left_Sidebar = () => {
   return (
     <aside className="HP_Leftbar">
       <div className="HP_Icon">
-        <img src="./src/assets/Logo's/FCPC.png" alt="FCPC Logo" />
+        <img src={fcpcSmallLogo} alt="FCPC Logo" />
       </div>
       <nav className="HP_Nav">
         <button className="HP_Nav_Item HP_Nav_Active">

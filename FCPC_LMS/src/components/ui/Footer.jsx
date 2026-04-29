@@ -1,4 +1,10 @@
 import "./Footer.css";
+import fcpcLogo from "../../assets/Logos/FCPC_Logo.png";
+import callIcon from "../../assets/Icons/call.png";
+import mailIcon from "../../assets/Icons/mail.png";
+import locationIcon from "../../assets/Icons/location.png";
+import facebookIcon from "../../assets/Icons/facebook.png";
+import youtubeIcon from "../../assets/Icons/youtube.png";
 
 export default function Footer() {
   return (
@@ -6,7 +12,7 @@ export default function Footer() {
 
       <div className="Footer_Top">
         <div className="Footer_Brand">
-          <img src="./src/assets/Logo's/FCPC_Logo.png" alt="FCPC Logo" />
+          <img src={fcpcLogo} alt="FCPC Logo" />
           <div>
             <h2>First City Providential College</h2>
             <p>The First, The Best!</p>
@@ -25,25 +31,25 @@ export default function Footer() {
             <h4>Contact Us</h4>
             <ul className="Footer_Contact">
               <li>
-                <img src="./src/assets/Icons/call.png" alt="call" />
+                <img src={callIcon} alt="call" />
                 +63 917 777 5989
               </li>
               <li>
-                <img src="./src/assets/Icons/mail.png" alt="email" />
+                <img src={mailIcon} alt="email" />
                 info@fcpc.edu.ph
               </li>
               <li>
-                <img src="./src/assets/Icons/location.png" alt="location" />
+                <img src={locationIcon} alt="location" />
                 City of San Jose del Monte, Bulacan
               </li>
             </ul>
 
             <div className="Footer_Socials">
               <a href="#" target="_blank" rel="noreferrer">
-                <img src="./src/assets/Icons/facebook.png" alt="Facebook" />
+                <img src={facebookIcon} alt="Facebook" />
               </a>
               <a href="#" target="_blank" rel="noreferrer">
-                <img src="./src/assets/Icons/youtube.png" alt="YouTube" />
+                <img src={youtubeIcon} alt="YouTube" />
               </a>
             </div>
           </div>
